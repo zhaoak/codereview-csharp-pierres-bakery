@@ -4,11 +4,12 @@ namespace Bakery.Models
     public class Bread : BakedGood {
 
         public Bread() {
-            _price = 5;
-            _bogo = 2;
+            Price = 5;
+            Bogo = 2;
         }
+
         public override int Purchase(int quantity) {
-            int cost = (_price * quantity) - _price * (quantity / 3);
+            int cost = (Price * quantity) - Price * (quantity / (Bogo + 1));
             return cost;
         }
     }
