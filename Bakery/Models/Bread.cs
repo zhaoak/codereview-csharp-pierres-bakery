@@ -7,8 +7,10 @@ namespace Bakery.Models
             Bogo = 2;
         }
 
-        public override int PriceCheck(int quantity) {
-            return (Price * quantity) - Price * (quantity / (Bogo + 1));
+        public Bread(int price, int bogo)
+        {
+            Price = price;
+            Bogo = bogo;
         }
     }
 }
