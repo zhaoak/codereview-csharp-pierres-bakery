@@ -14,7 +14,7 @@ each item implemented as its own class with different pricing structures.
 ## Setup/Installation
 - Clone repo to desktop
 - Install .NET 6 SDK if not already installed
-- Navigate to `PierresBakery` directory
+- Navigate to `Bakery` directory
 - Execute with `dotnet run`
 
 ## Known Bugs
