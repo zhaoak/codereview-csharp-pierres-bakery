@@ -8,7 +8,7 @@ namespace Bakery.Models
             _bogo = 2;
         }
         public override int Purchase(int quantity) {
-            int cost = (_price * quantity) - (quantity / 3);
+            int cost = (_price * quantity) - _price * (quantity / 3);
             return cost;
         }
     }

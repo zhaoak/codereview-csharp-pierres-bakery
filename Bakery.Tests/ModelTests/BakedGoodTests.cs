@@ -17,5 +17,16 @@ namespace Bakery.Tests
 
             Assert.AreEqual(expectedCost, testBread.Purchase(quantityToPurchase));
         }
+
+        [TestMethod]
+        public void Bread_PurchaseThree_Int()
+        {
+            int quantityToPurchase = 3;
+            Bread testBread = new Bread();
+            
+            int expectedCost = 10;
+
+            Assert.AreEqual(expectedCost, testBread.Purchase(quantityToPurchase));
+        }
     }
 }
