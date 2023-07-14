@@ -51,6 +51,7 @@ namespace Bakery.Tests
             Assert.AreEqual(expectedCost, testBread.Purchase(quantityToPurchase));
         }
 
+        // Pastry tests =====================
         [TestMethod]
         public void Pastry_PurchaseOne_Int()
         {
@@ -58,6 +59,17 @@ namespace Bakery.Tests
             Pastry testPastry= new Pastry();
             
             int expectedCost = 2;
+
+            Assert.AreEqual(expectedCost, testPastry.Purchase(quantityToPurchase));
+        }
+
+        [TestMethod]
+        public void Pastry_PurchaseFour_Int()
+        {
+            int quantityToPurchase = 4;
+            Pastry testPastry= new Pastry();
+            
+            int expectedCost = 6;
 
             Assert.AreEqual(expectedCost, testPastry.Purchase(quantityToPurchase));
         }
